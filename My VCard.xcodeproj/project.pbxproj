@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6D2CD462AC1D8A90059C71C /* My_VCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2CD452AC1D8A90059C71C /* My_VCardApp.swift */; };
+		B6D2CD462AC1D8A90059C71C /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2CD452AC1D8A90059C71C /* AppEntry.swift */; };
 		B6D2CD482AC1D8A90059C71C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2CD472AC1D8A90059C71C /* ContentView.swift */; };
 		B6D2CD4A2AC1D8AB0059C71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D2CD492AC1D8AB0059C71C /* Assets.xcassets */; };
 		B6D2CD4D2AC1D8AB0059C71C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D2CD4C2AC1D8AB0059C71C /* Preview Assets.xcassets */; };
+		B6D2CD572AC1DD6A0059C71C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D2CD562AC1DD6A0059C71C /* Launch Screen.storyboard */; };
+		B6D2CD5B2AC1DF420059C71C /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6D2CD5A2AC1DF420059C71C /* Pacifico-Regular.ttf */; };
+		B6D2CD5D2AC1E7CB0059C71C /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D2CD5C2AC1E7CB0059C71C /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B6D2CD422AC1D8A90059C71C /* My VCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My VCard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D2CD452AC1D8A90059C71C /* My_VCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_VCardApp.swift; sourceTree = "<group>"; };
+		B6D2CD452AC1D8A90059C71C /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		B6D2CD472AC1D8A90059C71C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6D2CD492AC1D8AB0059C71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D2CD4C2AC1D8AB0059C71C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6D2CD562AC1DD6A0059C71C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B6D2CD582AC1DE880059C71C /* My-VCard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "My-VCard-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B6D2CD5A2AC1DF420059C71C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		B6D2CD5C2AC1E7CB0059C71C /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		B6D2CD442AC1D8A90059C71C /* My VCard */ = {
 			isa = PBXGroup;
 			children = (
-				B6D2CD452AC1D8A90059C71C /* My_VCardApp.swift */,
+				B6D2CD582AC1DE880059C71C /* My-VCard-Info.plist */,
 				B6D2CD472AC1D8A90059C71C /* ContentView.swift */,
+				B6D2CD5C2AC1E7CB0059C71C /* InfoView.swift */,
+				B6D2CD452AC1D8A90059C71C /* AppEntry.swift */,
+				B6D2CD532AC1DCF60059C71C /* fonts */,
+				B6D2CD562AC1DD6A0059C71C /* Launch Screen.storyboard */,
 				B6D2CD492AC1D8AB0059C71C /* Assets.xcassets */,
 				B6D2CD4B2AC1D8AB0059C71C /* Preview Content */,
 			);
@@ -65,6 +76,14 @@
 				B6D2CD4C2AC1D8AB0059C71C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6D2CD532AC1DCF60059C71C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2CD5A2AC1DF420059C71C /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D2CD4D2AC1D8AB0059C71C /* Preview Assets.xcassets in Resources */,
+				B6D2CD572AC1DD6A0059C71C /* Launch Screen.storyboard in Resources */,
 				B6D2CD4A2AC1D8AB0059C71C /* Assets.xcassets in Resources */,
+				B6D2CD5B2AC1DF420059C71C /* Pacifico-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D2CD482AC1D8A90059C71C /* ContentView.swift in Sources */,
-				B6D2CD462AC1D8A90059C71C /* My_VCardApp.swift in Sources */,
+				B6D2CD5D2AC1E7CB0059C71C /* InfoView.swift in Sources */,
+				B6D2CD462AC1D8A90059C71C /* AppEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +294,7 @@
 				DEVELOPMENT_TEAM = M85NJXLM4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My-VCard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +324,7 @@
 				DEVELOPMENT_TEAM = M85NJXLM4F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "My-VCard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

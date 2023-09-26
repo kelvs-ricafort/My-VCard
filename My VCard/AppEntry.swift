@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct My_VCardApp: App {
+struct AppEntry: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }
